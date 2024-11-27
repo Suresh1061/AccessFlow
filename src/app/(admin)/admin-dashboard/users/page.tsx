@@ -136,8 +136,8 @@ const User = () => {
 
                {/* Edit user through modal */}
                {isUserEditModalOpen && editingUser && (
-                    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-                         <div className="bg-white p-6 rounded-lg shadow-xl relative w-full max-w-lg mx-4">
+                    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 p-4">
+                         <div className="bg-white p-4 sm:p-6 rounded-lg shadow-xl relative w-full max-w-lg mx-4">
                               <X className="absolute top-4 right-4 cursor-pointer" onClick={onClose} />
                               <h2 className="text-xl font-bold mb-4">Edit User</h2>
                               <UserForm

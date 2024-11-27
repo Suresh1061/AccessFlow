@@ -50,8 +50,8 @@ const UserCreateModal: React.FC<UserCreateModalProps> = ({ isOpen, onClose, onCr
   if (!isOpen) return null; // If modal is not open, don't render
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-      <div className="bg-white p-6 rounded-lg shadow-xl relative w-full max-w-lg mx-4">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 p-4">
+      <div className="bg-white p-4 sm:p-6 rounded-lg shadow-xl relative w-full max-w-lg mx-4">
         <X className="absolute top-4 right-4 cursor-pointer" onClick={onClose} />
         {isLoading ? (
           <div className=' w-full flex justify-center items-center'>
@@ -68,7 +68,7 @@ const UserCreateModal: React.FC<UserCreateModalProps> = ({ isOpen, onClose, onCr
               ) : (
                 selectedUser && (
                   <>
-                    <h2 className="text-xl font-bold mb-4">Create user with role and permissions</h2>
+                    <h2 className="text-lg sm:text-xl font-bold mb-4">Create user with role and permissions</h2>
                     <UserForm user={selectedUser} onUpdate={onCreateUser} onClose={onClose} />
                   </>
                 )

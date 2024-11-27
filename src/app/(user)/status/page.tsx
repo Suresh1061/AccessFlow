@@ -39,7 +39,7 @@ export default function StatusPage() {
                               </div>
                          </div>
                          <div>
-                              <span className={`${user?.role === "hr" ? "uppercase" : "capitalize"}`}>Role:</span> {user.role ? user.role : "No role assigned"}
+                              <span className="font-medium">Role:</span> {user.role ? user.role : "No role assigned"}
                          </div>
                          <div>
                               <span className="font-medium">Permissions:</span>
