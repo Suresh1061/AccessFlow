@@ -24,8 +24,6 @@ export async function middleware(request: NextRequest) {
           const isAdminRoute = adminPaths.includes(path);
           const isUserRoute = userPaths.includes(path);
 
-          console.log(path === "/admin-dashboard/users")
-
           // Handle unauthenticated users
           if (!isPublic && !session) {
                return NextResponse.redirect(new URL("/login", request.nextUrl));
@@ -38,8 +36,6 @@ export async function middleware(request: NextRequest) {
                     return NextResponse.redirect(new URL(redirectPath, request.nextUrl));
                }
           }
-
-          console.log(path, isAdminRoute, session?.user.type);
 
           // Role-based route access
           if (session) {
