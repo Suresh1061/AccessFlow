@@ -1,8 +1,8 @@
 import { connectDB } from "@/db";
 import User from "@/models/user";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function POST(req: Request, { params }: any) {
+export async function DELETE(request: NextRequest, { params }: any) {
      await connectDB();
      try {
           const { id } = params;

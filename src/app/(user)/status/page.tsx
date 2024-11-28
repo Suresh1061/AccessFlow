@@ -24,7 +24,7 @@ export default function StatusPage() {
      return (
           <main className="container mx-auto mt-8 p-4">
                <div className="w-full max-w-md mx-auto rounded-lg border bg-card text-card-foreground shadow-sm">
-                    <h2 className='flex flex-col space-y-1.5 p-6 text-2xl font-bold'>Your Informations</h2>
+                    <h2 className='flex flex-col space-y-1.5 p-6 text-2xl font-bold'>Your Information</h2>
                     <div className="space-y-4 p-6 pt-0">
                          <div>
                               <span className="font-medium capitalize">Name:</span> {user.name}
