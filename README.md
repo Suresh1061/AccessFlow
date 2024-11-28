@@ -1,24 +1,20 @@
 # AccessFlow
 
+### Deployment Link
+  ```
+    https://access-flow.vercel.app/
+  ```
+
+### Admin login credentials. (There is a default admin there, you have to login using this crdentials for doing any actions)
+  ```
+      admin@gmail.com
+  ```
+  ```
+     Admin@123
+  ```
+
 AccessFlow is a web application designed for managing users, their statuses, roles, and permissions efficiently.It allows admins to assign roles and customize permissions while providing users a clear view of their responsibilities and access.
 
-## Installation
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/Suresh1061/AccessFlow.git
-    cd AccessFlow
-    ```
-
-2. Install the dependencies:
-    ```bash
-    pnpm install
-    ```
-
-3. Start the development server:
-    ```bash
-    pnpm run dev
-    ```
 
 ## Features
 
@@ -49,6 +45,14 @@ AccessFlow is a web application designed for managing users, their statuses, rol
 - Users (including admins) log in using:
   - **Email**
   - **Password**
+ 
+## Admin login credentials. (There is a default admin there, you have to login using this crdentials for doing any actions)
+  ```
+      admin@gmail.com
+  ```
+  ```
+     Admin@123
+  ```
 
 ### Middleware Role-Based Redirection
 - A middleware determines the type of user based on stored information (whether it's "user" or "admin").
@@ -145,3 +149,21 @@ AccessFlow is a web application designed for managing users, their statuses, rol
 ### Development Tools:
 - Axios
 - React Hot Toast
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Suresh1061/AccessFlow.git
+    cd AccessFlow
+    ```
+
+2. Install the dependencies:
+    ```bash
+    pnpm install
+    ```
+
+3. Start the development server:
+    ```bash
+    pnpm run dev
+    ```
